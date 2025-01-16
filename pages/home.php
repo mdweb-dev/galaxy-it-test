@@ -1098,6 +1098,31 @@
                     </div>
                 </div>
             </section>
+
+            <section class="marquee">
+                <div class="marquee__swiper swiper js-marquee-swiper" data-reverse="false" data-speed="6000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-1-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-2-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-3-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-4-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-5-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../assets/img/marquee-img-6-@2x.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <?php include('../components/footer/_footer.php') ?>

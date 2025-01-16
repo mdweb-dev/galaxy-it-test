@@ -142,6 +142,30 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+
+  /**
+   * swiper marguee
+   */
+  var jsMarqueeSwiper = document.querySelectorAll('.js-marquee-swiper');
+  if (jsMarqueeSwiper.length) {
+    jsMarqueeSwiper.forEach(function (marqueeSwiper) {
+      var reverse = marqueeSwiper.dataset.reverse === 'true';
+      var speed1 = marqueeSwiper.dataset.speed || 6000;
+      new Swiper(marqueeSwiper, {
+        spaceBetween: 2,
+        centeredSlides: true,
+        speed: parseInt(speed1),
+        autoplay: {
+          delay: 1,
+          reverseDirection: reverse
+        },
+        loop: true,
+        slidesPerView: 'auto',
+        allowTouchMove: false,
+        disableOnInteraction: true
+      });
+    });
+  }
 });
 
 //If you really need Jquery
