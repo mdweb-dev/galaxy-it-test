@@ -8,8 +8,12 @@
   width: 100%;
   z-index: 99;
   background-color: $color-white;
+  transition: .3s;
   @include max-laptop {
     min-height: auto;
+  }
+  &.out {
+    transform: translateY(-101%);
   }
   &__container {}
   &__wrapper {
@@ -104,8 +108,11 @@
       display: none;
     }
     .header-mobile & {
-      display: flex;
-      width: 100%;
+      display: none;
+      @include max-small-portrai {
+        display: flex;
+        width: 100%;
+      }
     }
   }
   &__basket {

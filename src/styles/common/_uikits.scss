@@ -178,12 +178,13 @@ body.menu-open {
   .header {
     transform: none;
   }
-  .header-nav {
-    top: 0;
-  }
-  .header-menu {
-    opacity: 1;
-    pointer-events: visible;
+  &:before {
+    content: '';
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 97;
+    backdrop-filter: blur(10px);
   }
 }
 

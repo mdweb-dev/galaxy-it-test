@@ -32,6 +32,14 @@ window.addEventListener("DOMContentLoaded", () => {
         })
     }
 
+    const checkWindowSize = () => {
+        if (window.innerWidth >= 1199) {
+            bodyHtml.classList.remove('menu-open');
+        }
+    };
+    window.addEventListener('resize', checkWindowSize);
+    checkWindowSize();
+
     /**
      * clone menu mobile
      */
