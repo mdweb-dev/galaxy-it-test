@@ -7,7 +7,6 @@
 </head>
 <body>
     <div class="wrapper">
-        <?php include('components/header/_header.php') ?>
 
         <main class="main">
             <section class="index-menu">
@@ -21,7 +20,6 @@
             </section>
         </main>
 
-        <?php include('components/footer/_footer.php') ?>
     </div>
 </body>
 </html>

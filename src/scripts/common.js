@@ -32,10 +32,59 @@ window.addEventListener("DOMContentLoaded", () => {
         })
     }
 
+    /**
+     * clone menu mobile
+     */
     const jsMenuClone = document.querySelector('.js-menu-clone');
     const jsMenuInner = document.querySelector('.js-menu-inner');
     if (jsMenuClone && jsMenuInner) {
         jsMenuInner.appendChild(jsMenuClone.cloneNode(true))
+    }
+
+    /**
+     * TAB | Switcher
+     */
+    const switcherContentAll = document.querySelectorAll('.js-switcher-content');
+    const switcherButtonAll = document.querySelectorAll('.js-switcher-button');
+    const switcherScrollContainer = document.querySelector('.js-switcher-scroll');
+
+    if (switcherContentAll.length && switcherButtonAll.length) {
+        switcherButtonAll.forEach((button) => {
+            button.addEventListener('click', (event) => {
+                event.preventDefault();
+                switcherButtonAll.forEach((btn) => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const relatedClass = button.getAttribute('data-related-class');
+
+                switcherContentAll.forEach((content) => {
+                    const contentClasses = content.classList;
+                    contentClasses.remove('active', 'fade-in');
+
+                    if (contentClasses.contains(relatedClass)) {
+                        const elementsToToggle = document.querySelectorAll(`.${relatedClass}`);
+                        elementsToToggle.forEach((element) => {
+                            element.classList.add('active');
+                            setTimeout(() => {
+                                element.classList.add('fade-in');
+                            }, 100);
+                        });
+                    }
+                });
+
+                if (switcherScrollContainer) {
+                    const buttonOffsetLeft = button.offsetLeft;
+                    const containerWidth = switcherScrollContainer.offsetWidth;
+                    const buttonWidth = button.offsetWidth;
+                    const scrollPosition = buttonOffsetLeft - (containerWidth / 2) + (buttonWidth / 2);
+
+                    switcherScrollContainer.scrollTo({
+                        left: scrollPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
     }
 
     /**
@@ -54,6 +103,41 @@ window.addEventListener("DOMContentLoaded", () => {
                 type: 'bullets',
                 clickable: true
             },
+        })
+    }
+
+    /**
+     * swiper horizontal card
+     */
+    const jsBakerSwiper = document.querySelectorAll('.js-baker-swiper');
+    if (jsBakerSwiper.length) {
+        jsBakerSwiper.forEach(bakerSwiper => {
+            new Swiper(bakerSwiper, {
+                loop: true,
+                spaceBetween: 45,
+                navigation: {
+                    nextEl: '.js-baker-next',
+                    prevEl: '.js-baker-prev',
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 15
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    },
+                    1200: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    },
+                    1450: {
+                        slidesPerView: 4,
+                        spaceBetween: 45
+                    }
+                }
+            })
         })
     }
 

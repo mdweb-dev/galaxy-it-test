@@ -1,11 +1,12 @@
+/**
 @import "../common/mixins";
 @import "../common/variable";
+ */
 
 .hero {
   position: relative;
   overflow: hidden;
   padding: 70px 0 59px;
-  background-color: #f5f5f5;
   @include max-tablet {
     padding: 30px 0;
   }
@@ -13,11 +14,12 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 0;
-    width: 40%;
+    width: 60%;
     height: 100%;
-    background-color: $color-white;
+    background-color: #f5f5f5;
+    border-radius: 10px 0 0 10px;
     @include max-tablet {
       display: none;
     }
