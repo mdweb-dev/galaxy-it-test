@@ -2,18 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Index menu</title>
     <?php include('components/head/_head.php') ?>
 </head>
-<body class="home">
-    <div class="container">
-        <ul>
-            <li>
-                <a href="pages/home.php">home</a>
-            </li>
-        </ul>
-    </div>
+<body>
+    <div class="wrapper">
+        <?php include('components/header/_header.php') ?>
 
-    <?php include('components/footer/_footer.php') ?>
+        <main class="main">
+            <section class="index-menu">
+                <div class="index-menu__container">
+                    <ul>
+                        <li>
+                            <a href="pages/home.php">home</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <?php include('components/footer/_footer.php') ?>
+    </div>
 </body>
 </html>
