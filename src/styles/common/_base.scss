@@ -10,51 +10,25 @@ html {
 	}
 }
 
-
-body.admin-bar {
-	padding-top: 32px;
-	@include max-tablet {
-		padding-top: 46px;
-	}
-	.header {
-		//position: fixed;
-		top: 32px;
-		@include max-tablet {
-			top: 46px;
-		}
-	}
-}
-
 body {
-	position: relative;
-	margin: auto;
-	font-family: 'Roboto', 'Arial', sans-serif;
-	font-size: r(18);
-	line-height: 1.75;
-	color: $textColor;
-}
-
-.container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 r(12);
-
-	&__test {
-	  padding: 0 r(12);
-	}
-}
-
-.main-menu {
-	display: flex;
-	list-style: none;
-}
-
-a {
-	color: $textColor;
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	color: $color-gray;
 }
 
 .icon {
 	fill: currentColor;
-	stroke: currentColor;
+}
+
+.container,
+[class*="__container"] {
+	width: 100%;
+	max-width: 1920px + 120px + 120px;
+	margin-inline: auto;
+	padding-inline: 120px;
+	@include @mixin max-desktop-lg{
+	padding-inline: 15px;
+	}
 }
