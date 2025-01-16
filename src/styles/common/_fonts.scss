@@ -8,4 +8,15 @@
 // 800 Black or Extra Bold or Heavy;
 // 900 Extra Black or Fat or Ultra Black
 
-@include font_face('RobotoBold', 'Roboto',  700, normal);
+//Dupla Bold
+//Dupla Regular
+//Dupla DemiBold
+//Dupla Book
+//Dupla Bold Italic
+//Inter Light
+//Dupla DemiBold Italic
+//Dupla Italic
+//Montserrat Regular
+
+@include font_face('Inter-Light', 'Inter',  300, normal);
+@include font_face('Montserrat-Regular', 'Montserrat',  400, normal);

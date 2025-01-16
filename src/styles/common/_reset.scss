@@ -10,7 +10,7 @@
 }
 
 a {
-	color: $primaryColor;
+	color: $color-black;
 	text-decoration: none;
 	transition: all .3s;
 }
@@ -50,7 +50,8 @@ iframe {
 }
 
 input, select, textarea, button {
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: $font-family;
+	font-size: inherit;
 }
 
 textarea:focus-visible {
