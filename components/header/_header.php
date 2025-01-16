@@ -14,7 +14,7 @@
                 </a>
             </div>
 
-            <div class="header__main">
+            <div class="header__main js-menu-clone">
                 <div class="header__top">
                     <nav class="header__main-menu menu-main">
                         <ul>
@@ -59,12 +59,16 @@
                                 <svg class="icon">
                                     <use href="../assets/icons/sprite.svg#user"></use>
                                 </svg>
-                                Sign in
+                                <span>Sign in</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <button class="button-menu"></button>
+
+            <div class="header-mobile js-menu-inner"></div>
         </div>
 	</div>
 </header>

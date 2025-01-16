@@ -1,5 +1,7 @@
 window.addEventListener("DOMContentLoaded", () => {
 
+    const bodyHtml = document.body;
+
     /**
      * STICKY-HEADER
      */
@@ -18,6 +20,23 @@ window.addEventListener("DOMContentLoaded", () => {
         }
         scrollPrev = scrolled;
     });
+
+    /**
+     * menu mobile
+     */
+    const menuButton = document.querySelector('.button-menu');
+    if ( menuButton ) {
+        menuButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            bodyHtml.classList.toggle('menu-open');
+        })
+    }
+
+    const jsMenuClone = document.querySelector('.js-menu-clone');
+    const jsMenuInner = document.querySelector('.js-menu-inner');
+    if (jsMenuClone && jsMenuInner) {
+        jsMenuInner.appendChild(jsMenuClone.cloneNode(true))
+    }
 
 });
 
