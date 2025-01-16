@@ -2,3 +2,101 @@
 @import "../common/mixins";
 @import "../common/variable";
  */
+
+.recipes {
+  position: relative;
+  padding: 70px 0;
+  .flag-section {
+    transform: translateY(-50%);
+    right: 14.84%;
+  }
+  &__container {}
+  &__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    text-align: center;
+  }
+  &__title {}
+  &__description {
+    max-width: 464px;
+  }
+  &__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: r(132);
+    margin-top: 47px;
+    @include max-laptop {
+      grid-gap: r(25);
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include max-tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__action {
+    margin-top: 47px;
+    text-align: center;
+  }
+}
+
+.recipe-card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  &__picture {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    aspect-ratio: 1.498 / 1;
+    font-size: 0;
+    transition: .3s;
+    > *, a > * {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      aspect-ratio: 1.498 / 1;
+      font-size: 0;
+    }
+    picture {}
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    @include hover {
+      opacity: .8;
+    }
+  }
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 45px;
+    grid-gap: 10px;
+    text-align: center;
+  }
+  &__rating {}
+  &__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-gray;
+    &:hover {
+      color: $color-green;
+    }
+    a {
+      color: $color-gray;
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+  &__excerpt {}
+}

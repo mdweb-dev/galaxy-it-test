@@ -926,7 +926,178 @@
                 </div>
             </section>
 
+            <section class="recipes">
+                <div class="flag-section" style="background-image: url('../assets/img/section-flag.svg')"></div>
 
+                <div class="recipes__container">
+                    <div class="recipes__headline">
+                        <h2 class="recipes__title heading-h2">
+                            Authentic <mark>recipes</mark>
+                        </h2>
+                        <div class="recipes__description">
+                            Try one of our pearl sugar recipe at the comfort of your home.
+                            In the kitchen with waffle pantry.
+                        </div>
+                    </div>
+
+                    <div class="recipes__group">
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="../assets/img/recipe-img-1-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="../assets/img/recipe-img-2-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="../assets/img/recipe-img-3-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipes__action">
+                        <a href="#" class="btn-more">
+                            <span>discover more recipes</span>
+                            <i>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg?v=1#arrow-right"></use>
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <?php include('../components/footer/_footer.php') ?>
