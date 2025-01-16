@@ -15,7 +15,7 @@
             <section class="hero">
                 <div class="hero__wrapper">
                     <picture class="hero__picture">
-                        <img src="assets/img/hero-img-1-@2x.jpg" alt="hero img 1">
+                        <img src="../assets/img/hero-img-1-@2x.jpg" alt="hero img 1">
                     </picture>
 
                     <div class="hero__main">
