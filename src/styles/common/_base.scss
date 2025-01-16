@@ -17,6 +17,9 @@ body {
 	font-size: 18px;
 	line-height: 1.5;
 	color: $color-gray;
+	@include max-tablet {
+		padding-top: 75px;
+	}
 }
 
 .icon {

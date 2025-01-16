@@ -135,6 +135,7 @@
     width: 40px;
     height: 40px;
     background-color: transparent;
+    pointer-events: none;
     @include max-laptop {
       display: none;
     }
@@ -196,6 +197,7 @@
     bottom: -21px;
     z-index: -1;
     display: inline-flex;
+    pointer-events: none;
     @include max-laptop {
       bottom: -15px;
     }

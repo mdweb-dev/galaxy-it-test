@@ -39,6 +39,25 @@ window.addEventListener("DOMContentLoaded", function () {
   if (jsMenuClone && jsMenuInner) {
     jsMenuInner.appendChild(jsMenuClone.cloneNode(true));
   }
+
+  /**
+   * swiper js slider hero section
+   */
+  var jsHeroSwiper = document.querySelector('.js-hero-swiper');
+  if (jsHeroSwiper) {
+    jsHeroSwiperInit = new Swiper(jsHeroSwiper, {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      pagination: {
+        el: '.js-hero-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+    });
+  }
 });
 
 //If you really need Jquery
