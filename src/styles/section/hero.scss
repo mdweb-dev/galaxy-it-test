@@ -1,2 +1,161 @@
 @import "../common/mixins";
 @import "../common/variable";
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 0 59px;
+  background-color: #f5f5f5;
+  @include max-tablet {
+    padding: 30px 0;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 40%;
+    height: 100%;
+    background-color: $color-white;
+    @include max-tablet {
+      display: none;
+    }
+  }
+  &__container {
+    max-width: 1920px;
+    padding-inline: 0;
+  }
+  &__wrapper {
+    position: relative;
+    display: flex;
+    z-index: 1;
+    grid-gap: 54px;
+    @include max-desktop {
+      flex-direction: column-reverse;
+    }
+  }
+  &__picture {
+    display: flex;
+    width: 100%;
+    max-width: 919px;
+    align-self: flex-start;
+    @include max-desktop {
+      display: none;
+    }
+    picture {
+      position: relative;
+      overflow: hidden;
+      font-size: 0;
+      aspect-ratio: 1.555 / 1;
+      border-bottom-right-radius: 110px;
+    }
+    img {
+      width: 100%;
+      max-width: 919px;
+    }
+  }
+  &__main {
+    width: 100%;
+    max-width: 951px;
+    @include max-desktop {
+      max-width: none;
+    }
+  }
+  &__swiper {
+    height: 100%;
+    .swiper-wrapper {
+      .swiper-slide {}
+    }
+  }
+  &__pagination {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    display: flex;
+    grid-gap: 11px;
+    @include max-desktop {
+      justify-content: center;
+      padding-inline: 15px;
+    }
+    .swiper-pagination-bullet {
+      display: inline-flex;
+      margin: 0 !important;
+      width: 11px;
+      height: 11px;
+      border-radius: 100%;
+      background-color: transparent;
+      border: 1px solid $color-yellow;
+      opacity: 1 !important;
+      &.swiper-pagination-bullet-active {
+        background-color: $color-yellow;
+      }
+    }
+  }
+}
+
+.sugar-card {
+  position: relative;
+  height: 100%;
+  @include max-desktop {
+    display: flex;
+    align-items: center;
+  }
+  @include max-tablet {
+    flex-direction: column-reverse;
+    grid-gap: 15px;
+  }
+  &__main {
+    position: relative;
+    z-index: 1;
+    padding-top: 56px;
+    width: 100%;
+    max-width: 440px;
+    padding-bottom: 50px;
+    @include max-desktop {
+      max-width: none;
+      padding-left: 15px;
+    }
+    @include max-tablet {
+      padding-top: 0;
+      padding-right: 15px;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    text-transform: uppercase;
+    @include max-tablet {
+      font-size: 46px;
+    }
+  }
+  &__content {
+    margin-top: 33px;
+  }
+  &__action {
+    margin-top: 33px;
+  }
+  &__picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+    display: flex;
+    width: 100%;
+    max-width: 754px;
+    font-size: 0;
+    @include max-desktop {
+      position: static;
+    }
+    @include max-tablet {
+      max-width: 300px;
+      margin-left: auto;
+    }
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
