@@ -1191,5 +1191,17 @@ body.menu-open {
       .recipe-card__title a:hover {
         color: var(--color-green); }
 
+/**
+@import "../common/mixins";
+@import "../common/variable";
+ */
+.marquee__swiper .swiper-wrapper {
+  transition-timing-function: linear !important; }
+  .marquee__swiper .swiper-wrapper .swiper-slide {
+    width: auto;
+    aspect-ratio: 1;
+    display: inline-flex;
+    font-size: 0; }
+
 
 /*# sourceMappingURL=common.css.map*/

@@ -2,3 +2,17 @@
 @import "../common/mixins";
 @import "../common/variable";
  */
+
+.marquee {
+  &__swiper {
+    .swiper-wrapper {
+      transition-timing-function: linear !important;
+      .swiper-slide {
+        width: auto;
+        aspect-ratio: 1;
+        display: inline-flex;
+        font-size: 0;
+      }
+    }
+  }
+}
