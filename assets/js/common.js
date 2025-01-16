@@ -34,6 +34,13 @@ window.addEventListener("DOMContentLoaded", function () {
       bodyHtml.classList.toggle('menu-open');
     });
   }
+  var checkWindowSize = function checkWindowSize() {
+    if (window.innerWidth >= 1199) {
+      bodyHtml.classList.remove('menu-open');
+    }
+  };
+  window.addEventListener('resize', checkWindowSize);
+  checkWindowSize();
 
   /**
    * clone menu mobile
