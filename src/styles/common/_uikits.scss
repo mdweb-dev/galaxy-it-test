@@ -187,6 +187,76 @@ body.menu-open {
   }
 }
 
+.btn-favorite {
+  display: inline-flex;
+  line-height: 1;
+  border: none;
+  background-color: transparent;
+  color: #b8b8b8;
+  svg {
+    flex-shrink: 0;
+    width: 30px;
+    height: 27px;
+    transition: .3s;
+  }
+  @include hover {
+    color: $color-yellow;
+  }
+}
+
+.btn-addcart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  line-height: 1;
+  color: $color-yellow;
+  border-radius: 5px;
+  border: 1px solid currentColor;
+  background-color: transparent;
+  svg {
+    flex-shrink: 0;
+    width: 28px;
+    height: 27px;
+    transition: .3s;
+  }
+  @include hover {
+    color: $color-green;
+  }
+}
+
+.label-discount {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 78px;
+  min-height: 39px;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-white;
+  white-space: nowrap;
+  background-color: $color-green;
+}
+
+.rating-short {
+  display: flex;
+  align-items: center;
+  grid-gap: 8px;
+  color: $color-yellow;
+  svg {
+    width: 17px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+}
+
 /* TYPOGRAPHY STYLE ===================================== */
 .content-typ {
   h2, h3, h4, h5, h6 {
@@ -203,5 +273,51 @@ body.menu-open {
   }
   *:last-child {
     margin-bottom: 0;
+  }
+}
+
+/* TAB | SWITHCER =========================================== */
+.btn-switch {
+  display: flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 3px;
+  padding: 5px 15px;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 1;
+  text-align: center;
+  color: $color-gray;
+  white-space: nowrap;
+  background-color: #e8e8e8;
+  border: none;
+  transition: .3s;
+  picture {
+    flex-shrink: 0;
+    display: inline-flex;
+    width: 20px;
+    height: 22px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+  &.active {
+    font-weight: 700;
+    background-color: #f8f8f8;
+  }
+}
+
+.content-switch {
+  display: none;
+  opacity: 0;
+  &.active {
+    display: block;
+  }
+  &.fade-in {
+    opacity: 1;
+    transition: .3s .3s;
   }
 }

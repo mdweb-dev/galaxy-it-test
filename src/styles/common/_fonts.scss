@@ -18,5 +18,8 @@
 //Dupla Italic
 //Montserrat Regular
 
+@include font_face('OpenSans', 'OpenSans-Regular',  400, normal);
+@include font_face('OpenSans', 'OpenSans-Bold',  700, normal);
+
 @include font_face('Inter-Light', 'Inter',  300, normal);
 @include font_face('Montserrat-Regular', 'Montserrat',  400, normal);

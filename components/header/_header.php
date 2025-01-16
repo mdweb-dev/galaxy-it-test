@@ -50,7 +50,7 @@
                         <div class="header__basket">
                             <button class="btn-basket">
                                 <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#basket"></use>
+                                    <use href="../assets/icons/sprite.svg?v=1#basket"></use>
                                 </svg>
                             </button>
                         </div>
