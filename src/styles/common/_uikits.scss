@@ -227,6 +227,44 @@ body.menu-open {
   }
 }
 
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-yellow;
+  span {
+    display: inline-flex;
+    background-color: transparent;
+  }
+  i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-left: -25px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-bottom-color: currentColor;
+    border-right-color: currentColor;
+    border-top-color: currentColor;
+    transition: .3s;
+    svg {
+      width: 8px;
+      height: 14px;
+    }
+  }
+  &:hover {
+    color: $color-black;
+    i {
+      transform: translateX(15px);
+    }
+  }
+}
+
 .label-discount {
   position: relative;
   overflow: hidden;
@@ -245,6 +283,39 @@ body.menu-open {
   background-color: $color-green;
 }
 
+.label-icon {
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-gray;
+  white-space: nowrap;
+  span {
+    display: inline-flex;
+    line-height: 1;
+    transform: translateY(1px);
+  }
+  svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.flag-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 183px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .rating-short {
   display: flex;
   align-items: center;
@@ -258,6 +329,18 @@ body.menu-open {
 }
 
 /* TYPOGRAPHY STYLE ===================================== */
+.heading-h2 {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase;
+  span, mark {
+    font-style: italic;
+    font-weight: 600;
+    color: $color-yellow;
+    background-color: transparent;
+  }
+}
+
 .content-typ {
   h2, h3, h4, h5, h6 {
     margin-bottom: 30px;

@@ -342,6 +342,38 @@ body.menu-open {
     .btn-addcart:active {
       color: var(--color-green); } }
 
+.btn-more {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-yellow); }
+  .btn-more span {
+    display: inline-flex;
+    background-color: transparent; }
+  .btn-more i {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-left: -25px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-bottom-color: currentColor;
+    border-right-color: currentColor;
+    border-top-color: currentColor;
+    transition: .3s; }
+    .btn-more i svg {
+      width: 8px;
+      height: 14px; }
+  .btn-more:hover {
+    color: var(--color-black); }
+    .btn-more:hover i {
+      transform: translateX(15px); }
+
 .label-discount {
   position: relative;
   overflow: hidden;
@@ -359,6 +391,35 @@ body.menu-open {
   white-space: nowrap;
   background-color: var(--color-green); }
 
+.label-icon {
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 6px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-gray);
+  white-space: nowrap; }
+  .label-icon span {
+    display: inline-flex;
+    line-height: 1;
+    transform: translateY(1px); }
+  .label-icon svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px; }
+
+.flag-section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 183px;
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
 .rating-short {
   display: flex;
   align-items: center;
@@ -370,6 +431,16 @@ body.menu-open {
     flex-shrink: 0; }
 
 /* TYPOGRAPHY STYLE ===================================== */
+.heading-h2 {
+  font-weight: 400;
+  font-size: 40px;
+  text-transform: uppercase; }
+  .heading-h2 span, .heading-h2 mark {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-yellow);
+    background-color: transparent; }
+
 .content-typ h2, .content-typ h3, .content-typ h4, .content-typ h5, .content-typ h6 {
   margin-bottom: 30px; }
 
@@ -1035,6 +1106,90 @@ body.menu-open {
   @media (hover: none) {
     .baker-card:active {
       box-shadow: none; } }
+
+/**
+@import "../common/mixins";
+@import "../common/variable";
+ */
+.recipes {
+  position: relative;
+  padding: 70px 0; }
+  .recipes .flag-section {
+    transform: translateY(-50%);
+    right: 14.84%; }
+  .recipes__headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    text-align: center; }
+  .recipes__description {
+    max-width: 464px; }
+  .recipes__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 8.25rem;
+    margin-top: 47px; }
+    @media only screen and (max-width: 1199px) {
+      .recipes__group {
+        grid-gap: 1.5625rem;
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 767px) {
+      .recipes__group {
+        grid-template-columns: 1fr; } }
+  .recipes__action {
+    margin-top: 47px;
+    text-align: center; }
+
+.recipe-card {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1); }
+  .recipe-card__wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px; }
+  .recipe-card__picture {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    aspect-ratio: 1.498 / 1;
+    font-size: 0;
+    transition: .3s; }
+    .recipe-card__picture > *, .recipe-card__picture a > * {
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      aspect-ratio: 1.498 / 1;
+      font-size: 0; }
+    .recipe-card__picture img {
+      width: 100%;
+      object-fit: cover; }
+    @media (hover: hover) {
+      .recipe-card__picture:hover {
+        opacity: .8; } }
+    @media (hover: none) {
+      .recipe-card__picture:active {
+        opacity: .8; } }
+  .recipe-card__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 45px;
+    grid-gap: 10px;
+    text-align: center; }
+  .recipe-card__title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-gray); }
+    .recipe-card__title:hover {
+      color: var(--color-green); }
+    .recipe-card__title a {
+      color: var(--color-gray); }
+      .recipe-card__title a:hover {
+        color: var(--color-green); }
 
 
 /*# sourceMappingURL=common.css.map*/

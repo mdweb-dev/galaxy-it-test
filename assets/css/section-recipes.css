@@ -5,6 +5,10 @@
 @import "../common/mixins";
 @import "../common/variable";
  */
+.recipes__group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: r(132); }
 
 
 /*# sourceMappingURL=section-recipes.css.map*/
