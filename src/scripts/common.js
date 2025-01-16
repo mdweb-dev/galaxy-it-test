@@ -112,12 +112,16 @@ window.addEventListener("DOMContentLoaded", () => {
     const jsBakerSwiper = document.querySelectorAll('.js-baker-swiper');
     if (jsBakerSwiper.length) {
         jsBakerSwiper.forEach(bakerSwiper => {
-            new Swiper(bakerSwiper, {
+            const swiperInit = bakerSwiper.querySelector('.swiper');
+            const btnPrev = bakerSwiper.querySelector('.js-baker-prev');
+            const btnNext = bakerSwiper.querySelector('.js-baker-next');
+
+            new Swiper(swiperInit, {
                 loop: true,
                 spaceBetween: 45,
                 navigation: {
-                    nextEl: '.js-baker-next',
-                    prevEl: '.js-baker-prev',
+                    nextEl: btnNext,
+                    prevEl: btnPrev,
                 },
                 breakpoints: {
                     320: {
@@ -140,6 +144,16 @@ window.addEventListener("DOMContentLoaded", () => {
             })
         })
     }
+
+    class Person {
+        constructor(name) {
+            this.name = name;
+        }
+    }
+
+    const member = new Person("John");
+    console.log(typeof member);
+
 
 });
 
