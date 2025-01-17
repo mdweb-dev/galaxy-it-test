@@ -9,9 +9,17 @@
       transition-timing-function: linear !important;
       .swiper-slide {
         width: auto;
+        max-width: 300px;
+        max-height: 300px;
         aspect-ratio: 1;
         display: inline-flex;
         font-size: 0;
+        img {
+          width: 100%;
+          max-width: 300px;
+          object-fit: contain;
+          aspect-ratio: 1;
+        }
       }
     }
   }
